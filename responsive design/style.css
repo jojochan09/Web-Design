@@ -1,0 +1,70 @@
+table {
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: fixed
+}
+th {
+    border: 1px solid lightgreen;
+    background-color: #f2fff6;
+    padding: 10px;
+    width: 50px;
+}
+.tick {
+    color: cornflowerblue;
+}
+td {
+    text-align: center;
+    border: 1px solid lightgreen;
+    width:auto;
+}
+.title {
+    background-color: #bcf5cc;
+    height:50px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    
+}
+.blank{
+    border: none;
+    background-color: white;
+}
+#rotateTitle {
+    background-color: #bcf5cc;
+    writing-mode: vertical-rl;
+    white-space: nowrap;
+    transform: scale(-1);
+    width: 20px;
+}
+@media screen and (max-width: 900px){
+    .aims{
+        font-size: 4px;
+        padding: 2px
+    }
+}
+@media screen and (max-width: 700px) {
+    thead tr th {
+        display:none;
+    }
+    tbody, th, td{
+        display:block;
+    }
+    tbody tr td::after{
+        content: attr(data-title)
+    }
+    #rotateTitle {
+        display:none;
+    }
+    .blank{
+        display:none;
+    }
+    .title {
+        padding-top:5px;
+    }
+    .noShowInSmall{
+        display:none;
+    }
+    .title::after {
+        content: "and Programme Learning Outcomes";
+    }
+}
