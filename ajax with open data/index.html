@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hong Kong International Airport Flight Information</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+      <header>
+          <h1>Hong Kong International Airport <br />Flight Information</h1>
+      </header>
+      <div class="container">
+          <div class="sub_container">
+              <label class="current_date"></label>
+              <div class="switch_container">
+                  <div class="switch_box">
+                      <span class="dept decoration">Departure</span>
+                      <input type="checkbox" id="toggle_btn" unchecked />
+                      <label for="toggle_btn" class="switch_btn"></label>
+                      <span class="arr">Arrival</span>
+                  </div>
+              </div>
+              <p class="dp_tag">Departure Information</p>
+              <p class="ar_tag hidden">Arrival Information</p>
+
+              <div class="load_container">
+                  <p class="load_early">Load Early Flights</p>
+              </div>
+          </div>
+          <div class="departure_info_container">
+          </div>
+          <div class="arrival_info_container">
+          </div>
+          <div class="load_container">
+              <p class="load_more">Load More Flights</p>
+          </div>
+      </div>
+      <script src="script.js"></script>
+  </body>
+</html>

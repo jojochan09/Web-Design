@@ -1,0 +1,206 @@
+header {
+    background-image: linear-gradient(#b1f2d9, #52bafa);
+    background-color: paleturquoise;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+h1 {
+    padding: 35px;
+}
+.current_date {
+    font-size: 25px;
+    font-weight: bold;
+}
+.dp_tag, .ar_tag {
+    font-weight: bold;
+    font-size: 28px;
+    margin-top:0.5rem;
+    margin-bottom:0.5rem;
+}
+.container {
+    padding-left: 6rem;
+    padding-right: 6rem;
+}
+.sub_container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+.switch_container {
+    background-color: grey;
+    background-image: radial-gradient(white 5%, #52bafa);
+    text-align: center;
+    font-size: 24px;
+    padding: 0.6rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.5);
+}
+.switch_box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-gap:5px;
+}
+#toggle_btn {
+  display: none;
+  transition: all 10s;
+}
+.switch_box label {
+  position: relative;
+  display: block;
+  width: 50px;
+  height: 25px;
+  background-color: #ccc;
+  border-radius: 20px;
+  border-width: 20px;
+  cursor: pointer;
+}
+.switch_box label:before {
+  position: absolute;
+  left: 0px;
+  display: block;
+  content: "";
+  transition: left 250ms linear;
+  width: 25px;
+  height: 25px;
+  background: #1c7ed6;
+  border-radius: 50%;
+}
+#toggle_btn:checked + label:before {
+  left: 25px;
+}
+
+.load_container {
+  display: flex;
+  justify-content: center;
+}
+.load_button {
+}
+.load_early {
+    background-color: #a2c4f5;
+    max-width: auto;
+    text-align: center;
+    font-size: 25px;
+    height: auto;
+    padding: 10px 10px;
+    cursor: pointer;
+}
+.load_more {
+    background-color: #38d9a9;
+    max-width: auto;
+    text-align: center;
+    font-size: 25px;
+    height: auto;
+    padding: 10px 10px;
+    cursor: pointer;
+    margin-bottom:3rem;
+}
+.load_early:hover {
+    background-color: white;
+    border: 3px solid #a2c4f5;
+}
+.load_more:hover{
+    background-color:white;
+    border: 3px solid #38d9a9;
+}
+.flight_detail {
+  background-color: #dce5f2;
+  grid-template-columns: 1fr 1fr;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.5);
+  row-gap: 15px;
+  font-size:28px;
+  column-gap: 40px;
+  margin-bottom: 15px; 
+  padding: 10px;
+  display: grid;
+}
+.airport {
+  grid-column: 1/-1;
+}
+.decoration {
+  text-decoration: underline;
+}
+.hidden {
+  display: none;
+}
+@media screen and (max-width: 1000px) {
+    .container {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+    .current_date {
+        font-size: 25px;
+        font-weight: bold;
+    }
+    .dp_tag, .ar_tag {
+        font-size: 25px;
+    }
+    .flight_detail{
+        font-size:24px;
+    }
+    header{
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 800px){
+    header {
+        font-size: 14px;
+    }
+    .container {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+    .flight_detail {
+        font-size: 22px;
+    }
+    .current_date {
+        font-size: 22px;
+    }
+    .dp_tag, .ar_tag {
+        font-size: 22px;
+    }
+    .load_early {
+        font-size: 20px;
+    }
+    .load_more {
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 500px) {
+    header {
+        font-size: 12px;
+    }
+    .container {
+        padding-left: 0rem;
+        padding-right: 0rem;
+    }
+    .dp_tag, .ar_tag {
+        font-size: 20px;
+    }
+    h1 {
+        padding: 20px;
+    }
+    .dept, .arr{
+        font-size:18px;
+    }
+    .current_date {
+        font-size: 18px;
+    }
+    .flight_detail {
+        font-size: 18px;
+    }
+    .load_early {
+        font-size: 18px;
+    }
+    .load_more {
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .flight_detail {
+        font-size: 16px;
+    }
+}
