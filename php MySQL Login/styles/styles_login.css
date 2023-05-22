@@ -1,0 +1,57 @@
+h1{
+    margin-bottom: 50px;
+}
+fieldset {
+    background-color: #b8f5f0;
+    padding-top: 5px;
+    width: 50%;
+    margin: auto;
+    font-size: 20px;
+    border-radius: 10px;
+    margin-bottom:30px;
+}
+fieldset:nth-child(3){
+    background-color: #d1bceb;
+}
+#submit{
+    text-align:center;
+    font-size:15px;
+}
+.input{
+    text-align:center;
+}
+.WrongInput {
+    background-color: transparent;
+    text-align: center;
+    border: none;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+input[type="email"] {
+    appearance: none;
+    width: 100%;
+    border: 1px solid #333;
+    margin: 0;
+    font-family: inherit;
+    font-size: 90%;
+    box-sizing: border-box;
+}
+#mail:valid {
+    background-color: palegreen;
+}
+#mail:invalid {
+    background-color: red;
+}
+input:focus:invalid {
+    outline: none;
+}
+.error {
+    padding: 0;
+    background-color: white;
+    border-radius: 50px;
+    position:absolute;
+}
+.error.active {
+    padding: 0.5em;
+    border: solid black;
+}
